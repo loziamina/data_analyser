@@ -57,37 +57,39 @@ pytest
 
 ```
 Example Commands
-1. Show summary statistics
+1. Show summary statistics :
+
+  python main.py data/sample_data.csv --analysis summary
 ```
 
-python main.py data/sample_data.csv --analysis summary
-
 ```
-2. Show time-series analysis (no plot)
-```
+2. Show time-series analysis (no plot) :
 
-python main.py data/sample_data.csv --analysis time-series
-
-```
-3. Show top spending categories + bar chart (display only)
+  python main.py data/sample_data.csv --analysis time-series
 ```
 
-python main.py data/sample_data.csv --analysis top-categories --plot bar
-
 ```
-4. Generate and save a bar chart
-```
+3. Show top spending categories + bar chart (display only):
 
-python main.py data/sample_data.csv --analysis top-categories --plot bar --output results/top_categories.png
-
-```
-5. Show pie chart (for top spending)
+  python main.py data/sample_data.csv --analysis top-categories --plot bar
 ```
 
-python main.py data/sample_data.csv --analysis top-categories --plot pie
+```
+4. Generate and save a bar chart :
+
+  python main.py data/sample_data.csv --analysis top-categories --plot bar --output results/top_categories.png
+```
 
 ```
-6. Generate a heatmap of numeric correlations
+5. Show pie chart (for top spending) :
+
+  python main.py data/sample_data.csv --analysis top-categories --plot pie
+
 ```
 
-python main.py data/sample_data.csv --plot heatmap --analysis summary
+```
+6. Generate a heatmap of numeric correlations :
+
+  python main.py data/sample_data.csv --plot heatmap --analysis summary
+
+```
