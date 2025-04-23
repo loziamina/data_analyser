@@ -39,11 +39,15 @@ Ce projet est un outil d'analyse de données avec des fonctionnalités de visual
    cd data_analyser
    ```
 
+```bash
 python -m venv venv
 venv\Scripts\activate
+```
 
+```bash
 pip install
 pip install pandas matplotlib seaborn scikit-learn pytest
+```
 
 ```
 Run Tests
