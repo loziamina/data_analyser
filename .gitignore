@@ -4,51 +4,8 @@ venv/
 env/
 ENV/
 
-# Fichiers de logs
-*.log
-
-# Fichiers temporaires
-*.pyc
 __pycache__/
-*.pyo
-*.pyd
-*.swp
-
-# Notebooks checkpoints
-.ipynb_checkpoints/
-
-# Résultats et sorties générés
-*.out
-*.png
-*.jpg
-*.jpeg
-*.svg
-*.pdf
-*.csv
-*.xlsx
-*.json
-
-# Dossier de données 
-data/
-
-# Résultats enregistrés (plots ou rapports)
-results/
-output/
-
-# Fichiers spécifiques à l'IDE
 .vscode/
 .idea/
-
-# Fichiers de test Pytest
-.pytest_cache/
-.coverage
-htmlcov/
-.tox/
-nosetests.xml
-coverage.xml
-*.cover
-.cache
-
-# Windows
-.DS_Store
-Thumbs.db
+pycache/
+*.pyc
