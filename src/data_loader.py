@@ -3,15 +3,13 @@
 # - Validates the data (checks for required columns, handles missing values)
 # - Performs basic data cleaning (date parsing, type conversion)
 # - Has methods for filtering data by date range and categories
-
 import pandas as pd
 from datetime import datetime
-from typing import List, Optional, Dict
-
+from typing import List
 import os
 
 class DataLoader:
-    def init(self, file_path: str, required_columns: List[str], date_column: str):
+    def __init__(self, file_path: str, required_columns: List[str], date_column: str):
         self.file_path = file_path
         self.required_columns = required_columns
         self.date_column = date_column
@@ -21,8 +19,8 @@ class DataLoader:
         """Load data from a CSV file into a pandas DataFrame."""
         if not os.path.exists(self.file_path):
             raise FileNotFoundError(f"The file {self.file_path} does not exist.")
-
         self.data = pd.read_csv(self.file_path)
+        self.data[self.date_column] = pd.to_datetime(self.data[self.date_column])
         return self.data
 
     def validate_data(self) -> bool:
