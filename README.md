@@ -91,7 +91,3 @@ python main.py data/sample_data.csv --analysis top-categories --plot pie
 ```
 
 python main.py data/sample_data.csv --plot heatmap --analysis summary
-
-```
-
-```
