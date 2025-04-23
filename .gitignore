@@ -29,7 +29,7 @@ __pycache__/
 *.json
 
 # Dossier de données 
-#data/
+data/
 
 # Résultats enregistrés (plots ou rapports)
 results/
